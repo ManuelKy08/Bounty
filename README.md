@@ -23,6 +23,5 @@
 <a href="https://freeimage.host/i/KStilEu"><img src="https://iili.io/KStilEu.md.png" alt="KStilEu.md.png" border="0"></a>
 
 
-## Notice
-Versi terbaru layaknya cyberpunk 2077 
-Versi lama ada di https://github.com/manuelky08/Bounty
+## Visit
+https://manuelky08.github.io/Bounty
