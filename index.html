@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Risky Manuel - Cybersecurity Portfolio">
+    <title>Risky Manuel - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cyberpunk-container">
+        <!-- Matrix Rain Canvas -->
+        <canvas id="matrixCanvas" class="matrix-canvas"></canvas>
+        
+        <!-- Grid Background -->
+        <div class="grid-background"></div>
+        
+        <!-- Scanning Line -->
+        <div class="scan-line"></div>
+        
+        <!-- Custom Cursor -->
+        <div class="custom-cursor" id="customCursor"></div>
+
+        <!-- Content Wrapper -->
+        <div class="content-wrapper">
+            <!-- Header Section -->
+            <header class="header-section">
+                <pre class="ascii-art" id="asciiArt">
+ ██▀███   ██▓  ██████  ██ ▄█▀▓██   ██▓    ███▄ ▄███▓ ▄▄▄       ███▄    █  █    ██ ▓█████  ██▓      
+▓██ ▒ ██▒▓██▒▒██    ▒  ██▄█▒  ▒██  ██▒   ▓██▒▀█▀ ██▒▒████▄     ██ ▀█   █  ██  ▓██▒▓█   ▀ ▓██▒      
+▓██ ░▄█ ▒▒██▒░ ▓██▄   ▓███▄░   ▒██ ██░   ▓██    ▓██░▒██  ▀█▄  ▓██  ▀█ ██▒▓██  ▒██░▒███   ▒██░      
+▒██▀▀█▄  ░██░  ▒   ██▒▓██ █▄   ░ ▐██▓░   ▒██    ▒██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒▓▓█  ░██░▒▓█  ▄ ▒██░      
+░██▓ ▒██▒░██░▒██████▒▒▒██▒ █▄  ░ ██▒▓░   ▒██▒   ░██▒ ▓█   ▓██▒▒██░   ▓██░▒▒█████▓ ░▒████▒░██████▒  
+░ ▒▓ ░▒▓░░▓  ▒ ▒▓▒ ▒ ░▒ ▒▒ ▓▒   ██▒▒▒    ░ ▒░   ░  ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░▒▓▒ ▒ ▒ ░░ ▒░ ░░ ▒░▓  ░  
+  ░▒ ░ ▒░ ▒ ░░ ░▒  ░ ░░ ░▒ ▒░ ▓██ ░▒░    ░  ░      ░  ▒   ▒▒ ░░ ░░   ░ ▒░░░▒░ ░ ░  ░ ░  ░░ ░ ▒  ░  
+  ░░   ░  ▒ ░░  ░  ░  ░ ░░ ░  ▒ ▒ ░░     ░      ░     ░   ▒      ░   ░ ░  ░░░ ░ ░    ░     ░ ░     
+   ░      ░        ░  ░  ░    ░ ░               ░         ░  ░         ░    ░        ░  ░    ░  ░  
+                              ░ ░                                                                   
+                </pre>
+                <div class="header-divider">
+                    ═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+                </div>
+                <div class="terminal-line">
+                    <span class="prompt-text">$$$</span> No System Is Safe | Any System Need Update | Survive In Bug Bounty
+                </div>
+                <div class="header-divider">
+                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                </div>
+            </header>
+
+            <!-- Contact Section -->
+            <section class="terminal-box">
+                <div class="terminal-header">
+                    <div class="section-title">root@Risky:~# cat contact.txt</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="contact-line">
+                        <span class="quotes">❝❝</span>
+                        <span class="label">Instagram:</span>
+                        <a href="https://instagram.com/risky.manuel" class="link-text" target="_blank" rel="noopener noreferrer">@risky.manuel</a>
+                        <span class="quotes">❞❞</span>
+                    </div>
+                    <div class="contact-line">
+                        <span class="quotes">❝❝</span>
+                        <span class="label">Telegram:</span>
+                        <a href="https://t.me/kikokokok9" class="link-text" target="_blank" rel="noopener noreferrer">@kikokokok9</a>
+                        <span class="quotes">❞❞</span>
+                    </div>
+                    <div class="contact-line">
+                        <span class="quotes">❝❝</span>
+                        <span class="label">Email:</span>
+                        <a href="mailto:riskymanuel08@proton.me" class="link-text">riskymanuel08@proton.me</a>
+                        <span class="quotes">❞❞</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="terminal-box">
+                <div class="terminal-header">
+                    <h2 class="section-title">&gt;&gt; About Me</h2>
+                </div>
+                <div class="terminal-content about-text">
+                    <p>I am an experienced <strong>Bug Bounty Hunter</strong> and <strong>Cyber Security Enthusiast</strong> with a proven track record of identifying and reporting high-critical vulnerabilities for global organizations. Since 2021, I have been active on platforms such as <a href="https://hackerone.com/" class="link-text" target="_blank" rel="noopener noreferrer">HackerOne</a> and <a href="https://bugcrowd.com/" class="link-text" target="_blank" rel="noopener noreferrer">BugCrowd</a>, collaborating with security teams to improve system defenses. Recognized for my expertise in Web Application Security, API Security Testing, and Reconnaissance, I consistently deliver impactful results through an innovative and detail-oriented approach.</p>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="terminal-box">
+                <div class="terminal-header">
+                    <h2 class="section-title">&gt; Skills & Expertise</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-title">[+] Web Security</div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">XSS & CSRF</span></div>
+                            <div class="skill-item"><span class="skill-name">SQL Injection</span></div>
+                            <div class="skill-item"><span class="skill-name">Authentication Bypass</span></div>
+                            <div class="skill-item"><span class="skill-name">SSRF & RCE</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-title">[+] Tools & Technologies</div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">Burp Suite</span></div>
+                            <div class="skill-item"><span class="skill-name">OWASP ZAP</span></div>
+                            <div class="skill-item"><span class="skill-name">Metasploit</span></div>
+                            <div class="skill-item"><span class="skill-name">Nmap & Wireshark</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-title">[+] Programming</div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">Python</span></div>
+                            <div class="skill-item"><span class="skill-name">JavaScript</span></div>
+                            <div class="skill-item"><span class="skill-name">Bash Scripting</span></div>
+                            <div class="skill-item"><span class="skill-name">PHP & SQL</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-title">[+] Specializations</div>
+                        <div class="skill-items">
+                            <div class="skill-item"><span class="skill-name">API Security</span></div>
+                            <div class="skill-item"><span class="skill-name">OSINT & Recon</span></div>
+                            <div class="skill-item"><span class="skill-name">Mobile Security</span></div>
+                            <div class="skill-item"><span class="skill-name">Cloud Security</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Timeline -->
+            <section class="terminal-box">
+                <div class="terminal-header">
+                    <h2 class="section-title">&gt; Experience Timeline</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-title">Senior Security Researcher</div>
+                            <div class="timeline-description">
+                                Leading advanced penetration testing projects for Fortune 500 companies. Specialized in zero-day vulnerability discovery and coordinated disclosure. Achieved Hall of Fame status on multiple bug bounty platforms.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 - 2024</div>
+                            <div class="timeline-title">Bug Bounty Hunter</div>
+                            <div class="timeline-description">
+                                Identified 150+ critical vulnerabilities across web applications, APIs, and mobile platforms. Collaborated with security teams from tech giants including Google, Microsoft, and Facebook. Earned $50K+ in bounties.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - 2022</div>
+                            <div class="timeline-title">Security Analyst</div>
+                            <div class="timeline-description">
+                                Conducted comprehensive security assessments and vulnerability scans. Developed custom automation tools for reconnaissance and exploitation. Participated in CTF competitions, ranking top 5% globally.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2020 - 2021</div>
+                            <div class="timeline-title">Started Cybersecurity Journey</div>
+                            <div class="timeline-description">
+                                Self-taught ethical hacking through online resources, CTFs, and bug bounty programs. Built home lab for security research. Obtained multiple industry certifications in penetration testing and web security.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="terminal-box">
+                <div class="terminal-header">
+                    <h2 class="section-title">&gt; Featured Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">🔐</span>
+                            <div class="project-title">VulnScanner Pro</div>
+                        </div>
+                        <div class="project-description">
+                            Advanced automated vulnerability scanner built with Python. Detects XSS, SQLi, and IDOR vulnerabilities with 95% accuracy. Open-source tool with 2K+ GitHub stars.
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">🛡️</span>
+                            <div class="project-title">API Security Framework</div>
+                        </div>
+                        <div class="project-description">
+                            Comprehensive framework for testing REST and GraphQL APIs. Includes authentication bypass detection, rate limiting tests, and OWASP API Top 10 coverage.
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">API Testing</span>
+                            <span class="tag">OWASP</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">🔍</span>
+                            <div class="project-title">OSINT Toolkit</div>
+                        </div>
+                        <div class="project-description">
+                            All-in-one reconnaissance toolkit for bug bounty hunters. Automates subdomain enumeration, port scanning, and vulnerability assessment with real-time reporting.
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Bash</span>
+                            <span class="tag">OSINT</span>
+                            <span class="tag">Recon</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">⚡</span>
+                            <div class="project-title">Exploit Development Lab</div>
+                        </div>
+                        <div class="project-description">
+                            Custom-built vulnerable web application for security training. Features 50+ real-world vulnerabilities and guided exploitation challenges for learning.
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">Training</span>
+                            <span class="tag">CTF</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section class="terminal-box">
+                <div class="terminal-header">
+                    <h2 class="section-title">&gt; Achievements & Recognition</h2>
+                </div>
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🏆</span>
+                        <div class="achievement-text">
+                            <div class="achievement-title">HackerOne Top 100</div>
+                            <div class="achievement-desc">Ranked in top 100 researchers globally</div>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🎖️</span>
+                        <div class="achievement-text">
+                            <div class="achievement-title">Hall of Fame</div>
+                            <div class="achievement-desc">Featured in 15+ company security halls</div>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">💰</span>
+                        <div class="achievement-text">
+                            <div class="achievement-title">$50K+ Bounties</div>
+                            <div class="achievement-desc">Total earnings from bug reports</div>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🎯</span>
+                        <div class="achievement-text">
+                            <div class="achievement-title">150+ Critical Bugs</div>
+                            <div class="achievement-desc">High-severity vulnerabilities reported</div>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">🔬</span>
+                        <div class="achievement-text">
+                            <div class="achievement-title">CVE Contributor</div>
+                            <div class="achievement-desc">Published 5 CVEs in security databases</div>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="achievement-icon">📜</span>
+                        <div class="achievement-text">
+                            <div class="achievement-title">OSCP Certified</div>
+                            <div class="achievement-desc">Offensive Security Certified Professional</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- System Info Section -->
+            <section class="terminal-box">
+                <div class="terminal-header">
+                    <div class="section-title">root@Risky:~# fastfetch</div>
+                </div>
+                <div class="fastfetch-container">
+                    <pre class="fastfetch-logo">                  ##
+                 .o+`
+                `ooo/
+               `+oooo:
+              `+oooooo:
+              -+oooooo+:
+            `/:-:++oooo+:
+           `/++++/+++++++:
+          `/++++++++++++++:
+         `/+++ooooooooooooo/`
+        ./ooosssso++osssssso+`
+       .oossssso-````/ossssss+`
+      -osssssso.      :ssssssso.
+     :osssssss/        osssso+++.
+    /ossssssss/        +ssssooo/-
+  `/ossssso+/:-        -:/+osssso+-
+ `+sso+:-`                 `.-/+oso:
+`++:.                           `-/+/
+.`                                 `/</pre>
+                    <div class="fastfetch-info">
+                        <div class="info-line"><span class="info-label">root@rrsec9</span></div>
+                        <div class="info-divider">-----------------</div>
+                        <div class="info-line"><span class="info-key">OS:</span><span class="info-value">Arch Linux x86_64</span></div>
+                        <div class="info-line"><span class="info-key">Host:</span><span class="info-value">VivoBook_ASUSLaptop M1403QA_M1403)</span></div>
+                        <div class="info-line"><span class="info-key">Kernel:</span><span class="info-value">Linux 6.16.8-arch3-1</span></div>
+                        <div class="info-line"><span class="info-key">Uptime:</span><span class="info-value">9 hours, 37 mins</span></div>
+                        <div class="info-line"><span class="info-key">Packages:</span><span class="info-value">1058 (pacman), 29 (flatpak)</span></div>
+                        <div class="info-line"><span class="info-key">Shell:</span><span class="info-value">zsh 5.9</span></div>
+                        <div class="info-line"><span class="info-key">DE:</span><span class="info-value">GNOME</span></div>
+                        <div class="info-line"><span class="info-key">WM:</span><span class="info-value">Mutter (X11)</span></div>
+                        <div class="info-line"><span class="info-key">Terminal:</span><span class="info-value">GNOME Terminal 3.58.0</span></div>
+                        <div class="info-line"><span class="info-key">CPU:</span><span class="info-value">AMD Ryzen 7 5800HS (16) @ 4.46 GHz</span></div>
+                        <div class="info-line"><span class="info-key">GPU:</span><span class="info-value">AMD Radeon Vega Series / Radeon Vega M</span></div>
+                        <div class="info-line"><span class="info-key">Memory:</span><span class="info-value">8.09 GiB / 15.02 GiB </span><span class="info-percent">(54%)</span></div>
+                        <div class="info-line"><span class="info-key">Battery:</span><span class="info-value">74% </span><span class="info-percent">[AC Connected]</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-line">
+                    <span class="footer-text">[ SYSTEM SECURE - ACCESS GRANTED ]</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
